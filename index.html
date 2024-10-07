@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engagement Invitation</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Playfair Display', serif;
+      line-height: 1.6;
+      color: #fff;
+      background-color: #004d00; /* Dark green background */
+    }
+
+    header {
+      background: #d4af37; /* Gold background */
+      color: #fff;
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #d4af37; /* Gold hover effect */
+    }
+
+    section {
+      padding: 3rem 1rem;
+      text-align: center;
+      background-color: #004d00; /* Maintain dark green */
+    }
+
+    section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: #d4af37; /* Gold heading color */
+    }
+
+    section p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      color: #fff;
+    }
+
+    #menu {
+      padding: 3rem 1rem;
+      text-align: left;
+      background-color: #004d00; /* Maintain dark green */
+      color: #fff;
+      font-size: 1.2rem;
+    }
+
+    #menu h3 {
+      color: #d4af37; /* Gold for the menu section */
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    #menu p {
+      margin-bottom: 1.5rem;
+    }
+
+    #menu ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    #menu ul li {
+      margin-bottom: 1rem;
+    }
+
+    #rsvp-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #rsvp-form input, #rsvp-form textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 1rem;
+      border: 1px solid #d4af37; /* Gold border */
+      border-radius: 5px;
+      background-color: #fff;
+      color: #333;
+    }
+
+    #rsvp-form button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #d4af37; /* Gold button */
+      color: #fff;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #rsvp-form button:hover {
+      background-color: #b8860b; /* Darker gold on hover */
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    footer p {
+      margin: 0.5rem 0;
+    }
+
+    footer a {
+      color: #d4af37;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>You're Invited!</h1>
+    <p>Join us for the engagement of <strong>John</strong> & <strong>Jane</strong></p>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#event-details">Event Details</a>
+    <a href="#menu">Menu</a>
+    <a href="#rsvp">RSVP</a>
+    <a href="#photos">Photos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Event Details Section -->
+  <section id="event-details">
+    <h2>Event Details</h2>
+    <p>Date: Saturday, December 15, 2024</p>
+    <p>Time: 5:00 PM</p>
+    <p>Venue: The Grand Ballroom, 123 Wedding Street, Celebration City</p>
+    <p>Dress Code: Cocktail Attire</p>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu">
+    <h3>Event Menu</h3>
+
+    <p><strong>Entrées</strong></p>
+    <ul>
+      <li><strong>Honey Glazed Turkey Breast:</strong> Succulent turkey breast with a sweet honey glaze.</li>
+      <li><strong>Roasted Garlic Chicken:</strong> Tender chicken roasted with garlic and herbs.</li>
+      <li><strong>Blackened Salmon:</strong> Fresh salmon, seasoned and blackened to perfection.</li>
+      <li><strong>Vegetarian Option:</strong> A delicious, chef’s choice vegetarian entrée featuring seasonal vegetables.</li>
+    </ul>
+
+    <p><strong>Sides (Choose One)</strong></p>
+    <ul>
+      <li><strong>Red Roasted Potatoes:</strong> Crispy, seasoned red potatoes roasted to golden perfection.</li>
+      <li><strong>Wild Rice:</strong> Flavorful wild rice blend with herbs.</li>
+      <li><strong>Rice Pilaf:</strong> Light and fluffy rice pilaf, cooked with aromatic spices.</li>
+    </ul>
+  </section>
+
+  <!-- RSVP Section -->
+  <section id="rsvp">
+    <h2>RSVP</h2>
+    <p>Please let us know if you will be able to attend our special day!</p>
+    <form id="rsvp-form" action="submit_form.php" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="4" placeholder="Any message or dietary preferences?" required></textarea>
+      <button type="submit">Submit RSVP</button>
+    </form>
+  </section>
+
+  <!-- Photos Section -->
+  <section id="photos">
+    <h2>Engagement Photos</h2>
+    <p>Coming Soon: A gallery of our beautiful engagement moments!</p>
+    <!-- Add image gallery or slideshow here -->
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have any questions? Feel free to reach out to us at:</p>
+    <p>Email: <a href="mailto:johnandjane@example.com">johnandjane@example.com</a></p>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 John & Jane's Engagement</p>
+    <p>Designed with love</p>
+  </footer>
+
+</body>
+</html>
