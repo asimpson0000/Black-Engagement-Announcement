@@ -1,9 +1,11 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Engagement Invitation</title>
+  <title>Engagement Annoucement for Anthony & Monique</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <style>
@@ -199,6 +201,7 @@
     <p>Please let us know if you will be able to attend our special day!</p>
     <form id="rsvp-form" action="submit_form.php" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
+      <input type="text" name="guest_name" placeholder="Guest Name (if any)">
       <input type="email" name="email" placeholder="Your Email" required>
       <textarea name="message" rows="4" placeholder="Any message or dietary preferences?" required></textarea>
       <button type="submit">Submit RSVP</button>
@@ -208,7 +211,7 @@
   <!-- Photos Section -->
   <section id="photos">
     <h2>Engagement Photos</h2>
-    <p>Coming Soon: A gallery of our beautiful engagement moments!</p>
+    <p>Coming Soon: A gallery of our beautiful moments together!</p>
     <!-- Add image gallery or slideshow here -->
   </section>
 
@@ -216,12 +219,12 @@
   <section id="contact">
     <h2>Contact Us</h2>
     <p>Have any questions? Feel free to reach out to us at:</p>
-    <p>Email: <a href="mailto:johnandjane@example.com">johnandjane@example.com</a></p>
+    <p>Email: <a href="mailto:salacioussmmc@yahoo.com">salacioussmmc@yahoo.com</a></p>
   </section>
 
   <!-- Footer Section -->
   <footer>
-    <p>&copy; 2024 John & Jane's Engagement</p>
+    <p>&copy; Anthony & Monique's Engagement Annoucement</p>
     <p>Designed with love</p>
   </footer>
 
